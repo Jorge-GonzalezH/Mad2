@@ -1,0 +1,45 @@
+; Run parameters
+integrator               = sd            ; Use Langevin dynamics (sin cambios)
+dt                       = 0.0005        ; Time step (en reduced units)
+
+nsteps                   = 500000      ; Number of integration steps (sin cambios)
+nstxout                  = 0             ; No output to .trr file (sin cambios)
+nstvout                  = 0             ; No output to .trr file (sin cambios)
+nstlog                   = 100000        ; Log file update frequency (sin cambios)
+nstenergy                = 5000          ; Energy file output frequency (sin cambios)
+nstxtcout                = 5000          ; .xtc file output frequency (sin cambios)
+
+xtc_grps                 = system        ; Group(s) to write to .xtc trajectory (sin cambios)
+energygrps               = system        ; Group(s) for energy file (sin cambios)
+
+; Neighbor searching
+nstlist                  = 20            ; Neighbor list update frequency (sin cambios)
+ns_type                  = grid          ; Use grid for neighbor searching (sin cambios)
+
+
+; Interaction potentials
+coulombtype              = Cut-off            ; Use Particle Mesh Ewald (PME) for electrostatics (ajustado para GA)
+vdwtype                  = cutoff        ; Use cutoff for van der Waals interactions
+rvdw                     = 3.0          ; Adjust van der Waals cutoff for GA model
+rlist                    = 3.0           ; Cutoff distance for short-range neighbor list (sin cambios)
+rcoulomb                 = 3.0           ; Cutoff for electrostatics (sin cambios)
+pbc                      = no        ; No usar condiciones periódicas (si aplica)
+
+
+; Cutoff scheme
+cutoff-scheme            = group         ; Group cutoff scheme (sin cambios)
+
+; Temperature coupling
+tc-grps                  = system        ; Group for temperature coupling (sin cambios)
+tau_t                    = 1.0           ; Temp coupling time constant (sin cambios)
+ref_t                    = 102.0         ; Reference temperature for simulation (sin cambios)
+
+; Pressure coupling
+Pcoupl                   = no            ; No pressure coupling (sin cambios)
+
+; Velocity generation
+gen_vel                  = yes           ; Generate initial velocities (sin cambios)
+gen_temp                 = 102.0         ; Temperature for initial velocities (sin cambios)
+gen_seed                 = -1            ; Random seed for initial velocities (sin cambios)
+ld_seed                  = -1            ; Random seed for Langevin dynamics (sin cambios)
+comm_mode                = none          ; Center of mass velocity removal (sin cambios)
