@@ -1,4 +1,4 @@
-%%writefile smog_models.sh
+%%writefile smog_models.sh for Closed
 #!/bin/bash
 
 # Ruta al ejecutable de SMOG usando udocker
@@ -16,6 +16,25 @@ OUTPUT_XML="C_Mad_smog.xml"  # Nombre del archivo XML de salida
 
 # Ejecutar SMOG2 con los argumentos especificados
 $SMOG_EXECUTABLE smog2 -i $INPUT_PDB -AAgaussian -SCMorig -OpenSMOG -dname C_Mad_smog
+
+%%writefile smog_models.sh for Opened
+#!/bin/bash
+
+# Ruta al ejecutable de SMOG usando udocker
+SMOG_EXECUTABLE="udocker --allow-root run --rm -v $(pwd):/workdir smogserver/smog2:stable"
+
+# Nombre del archivo PDB de entrada
+INPUT_PDB="Open.pdb"
+
+# Nombre de los archivos de salida
+OUTPUT_GRO="O_Mad_smog.gro"
+OUTPUT_TOP="O_Mad_smog.top"
+OUTPUT_CONTACTS="O_Mad_smog.contacts"
+OUTPUT_NDX="O_Mad_smog.ndx"
+OUTPUT_XML="O_Mad_smog.xml"  # Nombre del archivo XML de salida
+
+# Ejecutar SMOG2 con los argumentos especificados
+$SMOG_EXECUTABLE smog2 -i $INPUT_PDB -AAgaussian -SCMorig -OpenSMOG -dname O_Mad_smog
 
 ## To execute ##
 #ejecutar smog_models.sh
