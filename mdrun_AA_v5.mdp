@@ -1,0 +1,46 @@
+; Run parameters
+integrator               = sd              ; Use Langevin dynamics
+dt                       = 0.002           ; Time step in reduced units
+
+nsteps                   = 10000000        ; Number of integration steps
+nstxout                  = 0               ; No output to .trr file
+nstvout                  = 0               ; No output to .trr file
+nstfout                  = 500             ; Force output frequency
+nstlog                   = 500             ; Log file update frequency
+nstenergy                = 500             ; Energy file output frequency
+nstxout-compressed       = 500             ; .xtc file output frequency
+
+compressed-x-precision   = 1000            ; Precision of .xtc output
+compressed-x-grps        = system          ; Group(s) to write to .xtc trajectory
+energygrps               = system          ; Group(s) for energy file
+
+; Neighbor searching
+nstlist                  = 40              ; Neighbor list update frequency
+ns_type                  = grid            ; Use grid for neighbor searching
+
+; Interaction potentials
+coulombtype              = Cut-off         ; Use cutoff for electrostatics
+rvdw                     = 1.2             ; van der Waals cutoff
+rlist                    = 1.2             ; Cutoff distance for short-range neighbor list
+rcoulomb                 = 1.2             ; Electrostatics cutoff
+pbc                      = xyz             ; Periodic boundary conditions
+
+; Cutoff scheme
+cutoff-scheme            = verlet          ; Use verlet cutoff scheme
+table-extension          = 20              ; Table extension for non-bonded interactions
+
+; Temperature coupling
+tc-grps                  = system          ; Group for temperature coupling
+tau_t                    = 1.0             ; Temp coupling time constant
+ref_t                    = 108.0           ; Reference temperature for simulation
+
+; Pressure coupling
+Pcoupl                   = no              ; No pressure coupling
+
+; Velocity generation
+gen_vel                  = yes             ; Generate initial velocities
+gen_temp                 = 108.0           ; Temperature for initial velocities
+gen_seed                 = -1              ; Random seed for initial velocities
+
+; Constraints
+constraints              = none            ; No constraints applied
