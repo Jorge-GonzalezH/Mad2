@@ -6,6 +6,7 @@
 #SBATCH -n 1
 #SBATCH -c 44
 #SBATCH --mem-per-cpu=1000
+#SBATCH --nodelist=sn009,10,11                                                   
 #SBATCH --mail-user=jfgonzalez5@uc.cl
 #SBATCH --mail-type=ALL
 #SBATCH -o Simulaciones_GROMACS_%j.out
