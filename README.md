@@ -45,7 +45,7 @@ Este repositorio contiene scripts y herramientas diseñadas para configurar, eje
 ## Requisitos Previos
 
 1. **Software Requerido:**
-   - GROMACS (versión >= 2021).
+   - GROMACS (versión >= 4.5 o 5.0).
    - Python (versión >= 3.7).
 2. **Bibliotecas de Python:**
    - pathlib
@@ -92,13 +92,13 @@ Este repositorio contiene scripts y herramientas diseñadas para configurar, eje
 A continuación, se muestran imágenes representativas del flujo de trabajo:
 
 ### 1. Configuración de Carpetas
-![](https://via.placeholder.com/800x400.png?text=Estructura+de+Carpetas+por+Temperatura)
+#![](https://via.placeholder.com/800x400.png?text=Estructura+de+Carpetas+por+Temperatura)
 
 ### 2. Simulaciones en Progreso
-![](https://via.placeholder.com/800x400.png?text=Ejecuci%C3%B3n+de+Simulaciones+en+GROMACS)
+#![](https://via.placeholder.com/800x400.png?text=Ejecuci%C3%B3n+de+Simulaciones+en+GROMACS)
 
 ### 3. Análisis y Resultados
-![](https://via.placeholder.com/800x400.png?text=An%C3%A1lisis+Automatizado+de+Trayectorias)
+#![](https://via.placeholder.com/800x400.png?text=An%C3%A1lisis+Automatizado+de+Trayectorias)
 
 ---
 
@@ -124,4 +124,4 @@ Si deseas mejorar este proyecto, ¡eres bienvenido a contribuir! Por favor, sigu
 ---
 
 ### Contacto
-Para preguntas o sugerencias, por favor abre un issue o contáctame directamente en [tu.email@dominio.com](mailto:tu.email@dominio.com).
+Para preguntas o sugerencias, por favor abre un issue o contáctame directamente en [tu.email@dominio.com](mailto:simulacra.simulacion@gmail.com).
