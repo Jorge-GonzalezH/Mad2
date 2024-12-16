@@ -100,6 +100,10 @@ A continuación, se muestran imágenes representativas del flujo de trabajo:
 ### 3. Análisis y Resultados
 #![](https://via.placeholder.com/800x400.png?text=An%C3%A1lisis+Automatizado+de+Trayectorias)
 
+# Usar con github o drive 
+![Estructura de carpetas](https://github.com/tu-usuario/tu-repo/ruta-a-la-imagen.png)
+![Descripción](https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO)
+
 ---
 
 ## Contribuciones
