@@ -128,4 +128,4 @@ Si deseas mejorar este proyecto, ¡eres bienvenido a contribuir! Por favor, sigu
 ---
 
 ### Contacto
-Para preguntas o sugerencias, por favor abre un issue o contáctame directamente en [tu.email@dominio.com](mailto:simulacra.simulacion@gmail.com).
+Para preguntas o sugerencias, por favor abre un issue o contáctame directamente en [simulacra.simulacion@gmail.com](mailto:simulacra.simulacion@gmail.com).
